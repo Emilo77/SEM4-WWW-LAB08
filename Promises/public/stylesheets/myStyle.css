@@ -1,0 +1,30 @@
+* {
+  font-size: 1.1em;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.optionsFrame{
+  background-color: lightgray;
+  width: 15em;
+  height: auto;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  margin: 0.5em;
+  background-color: cadetblue;
+  padding: 0.5em;
+  text-align: center;
+  color: black;
+}
+
+.divSolution{
+  background-color: palegoldenrod;
+  width: 20em;
+  height: 10em;
+  margin: 2em auto;
+  padding: 1em;
+}

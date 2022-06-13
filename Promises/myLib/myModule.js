@@ -1,4 +1,5 @@
 const myFunctions = {};
+const axios = require('axios').default;
 
 /* PART 0 */
 /* Nothing to be done here. Only understand the function f0 and get familiar with promises. */
@@ -65,5 +66,25 @@ myFunctions.functionPart3 = (word) => {
     }, 2000);
   });
 };
+
+/* PART 4 */
+myFunctions.bonus = async () => {
+  const urls = [
+    'https://www.youtube.com/?hl=pl&gl=PL',
+    'https://www.wikipedia.org',
+    'https://www.facebook.com',
+    'https://usosweb.mimuw.edu.pl/kontroler.php?_action=home/index',
+    'https://moodle.mimuw.edu.pl/my/',
+    'http://localhost:8000',
+  ];
+  return Promise.any([
+    axios.get(urls[0]),
+    axios.get(urls[1]),
+    axios.get(urls[2]),
+    axios.get(urls[3]),
+    axios.get(urls[4]),
+  ]);
+}
+
 
 module.exports = myFunctions;

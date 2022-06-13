@@ -3,7 +3,7 @@ const path = require('path');
 const indexRouter = require('./routes/index');
 
 const app = express();
-const port = 3000;
+const port = 8000;
 
 app.use(express.static('public'));
 app.set('view engine', 'pug');
